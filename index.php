@@ -1,3 +1,90 @@
+<?php
+
+$media_movies = [
+    [
+        "title" => "Pobres Criaturas",
+        "genre" => "Drama",
+        "year" => "2023",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/pobres-criaturas.png',
+            'alt' => 'Img Pobres Criaturas'
+        ]
+    ],
+    [
+        "title" => "Meu Malvado Favorito 4",
+        "genre" => "Animação",
+        "year" => "2024",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/meu-malvado-favorito-4.png',
+            'alt' => 'Img Meu Malvado Favorito 4'
+        ]
+    ],
+    [
+        "title" => "Deadpool & Wolverine",
+        "genre" => "Ação",
+        "year" => "2023",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/deadpool-wolverine.png',
+            'alt' => 'Img Deadpool & Wolverine'
+        ]
+    ],
+    [
+        "title" => "O Corvo",
+        "genre" => "Fantasia",
+        "year" => "2024",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/o-corvo.png',
+            'alt' => 'Img O Corvo'
+        ]
+    ],
+    [
+        "title" => "O Senhor dos Anéis: A Sociedade do Anel",
+        "genre" => "Aventura",
+        "year" => "2001",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/senhor-dos-aneis-a-sociedade-do-anel.png',
+            'alt' => 'Img O Senhor dos Anéis: A Sociedade do Anel'
+        ]
+    ],
+    [
+        "title" => "Alien: Covenant",
+        "genre" => "Horror",
+        "year" => "2017",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/alien-covenant.png',
+            'alt' => 'Img Alien: Covenant'
+        ]
+    ],
+    [
+        "title" => "Divertidamente 2",
+        "genre" => "Animação",
+        "year" => "2024",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/divertidamente-2.png',
+            'alt' => 'Img Divertidamente 2'
+        ]
+    ],
+    [
+        "title" => "Mad Max: Estrada da Fúria",
+        "genre" => "Ação",
+        "year" => "2015",
+        "indication" => "4,5",
+        'images' => [
+            'src' => '/public/assets/img-movie/mad-max-estrada-da-furia.png',
+            'alt' => 'Img Mad Max: Estrada da Fúria'
+        ]
+    ],
+]
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -73,7 +160,25 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mx-[88px] mt-16 mb-[69px]">
+        <!-- heading -->
+        <header class="max-h-12 flex items-center justify-between">
+            <div class="text-[24px] text-[#E5E2E9] font-display">
+                Explorar
+            </div>
+
+            <!-- input placeholder -->
+            <form class="px-4 py-3 flex items-center space-x-2 border border-gray-300 rounded-[6px] group transition-all">
+                <span class="flex items-center w-5 h-5">
+                    <i class="ph ph-magnifying-glass text-gray-500 group-focus:text- w-4 h-4"></i>
+                </span>
+                <input
+                    type="text"
+                    class="flex items-center text-[16px] text-gray-700 font-body bg-transparent placeholder:text-[16px] placeholder:text-gray-500 outline-none"
+                    placeholder="Pesquisar filme"
+                    name="search" />
+            </form>
+        </header>
     </main>
 </body>
 
