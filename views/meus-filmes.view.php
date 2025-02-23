@@ -21,7 +21,7 @@
         <section class="grid grid-cols-4 gap-6 mt-[33px]">
             <?php foreach ($media_movies as $media_movie): ?>
                 <!-- COMPONENTE - Movie Card -->
-                <div class="flex flex-col justify-between min-w-[280px] min-h-[360px] rounded-[20px] bg-center bg-auto <?php if (isset($media_movie['images'])): ?> bg-[url('<?= $media_movie['images']['src'] ?>')] <?php else: ?> bg-gray-100 <?php endif; ?> relative"> <!-- Essa div vai ser uma bg-image -->
+                <div class="flex flex-col justify-between min-w-[280px] min-h-[360px] rounded-[20px] bg-center bg-cover <?php if (isset($media_movie['images'])): ?> bg-[url('<?= $media_movie['images']['src'] ?>')] <?php else: ?> bg-gray-100 <?php endif; ?> relative"> <!-- Essa div vai ser uma bg-image -->
                     <div class="flex items-center text-gray-700 px-2.5 py-1.5 space-x-1.5 mr-2 mt-2 ml-auto max-w-max bg-gray-100 opacity-[.80] rounded-full z-10">
                         <div class="flex items-center space-x-0.5">
                             <span class="text-[20px] font-title font-bold"><?= $media_movie['indication'] ?></span>
