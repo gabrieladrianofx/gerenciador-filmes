@@ -54,7 +54,7 @@
                     <i class="ph ph-popcorn text-gray-500 w-5 h-5 group-active:text-purple-light group-hover:text-gray-500 group-aria-[current=page]:text-purple-light"></i>
                     <span class="text-gray-500 text-[16px] group-active:text-purple-light group-hover:text-gray-500 group-aria-[current=page]:text-purple-light">Explorar</span>
                 </a>
-                <a href="/meus-filmes.php" class="px-3 py-2 space-x-2 rounded-[6px] active:bg-gray-300 hover:bg-gray-200 group cursor-pointer transition-all">
+                <a href="/meus-filmes" class="px-3 py-2 space-x-2 rounded-[6px] active:bg-gray-300 hover:bg-gray-200 group cursor-pointer transition-all">
                     <i class="ph ph-film-slate text-gray-500 w-5 h-5 group-active:text-purple-light group-hover:text-gray-500"></i>
                     <span class="text-gray-500 text-[16px] group-active:text-purple-light group-hover:text-gray-500">Meus filmes</span>
                 </a>
@@ -75,7 +75,7 @@
         </nav>
     </header>
 
-    <?php require("views/{$view}.view.php"); ?>
+    <?php require "views/{$view}.view.php"; ?>
 </body>
 
 </html>
