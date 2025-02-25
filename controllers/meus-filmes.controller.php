@@ -2,7 +2,6 @@
 
 require "dados.php";
 
-$view = 'meus-filmes';
-require "views/template/app.php";
+view('meus-filmes', ['media_movies' => $media_movies]);
 
 ?>

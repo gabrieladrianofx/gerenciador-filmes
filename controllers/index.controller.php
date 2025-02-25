@@ -1,8 +1,7 @@
 <?php
 
-require 'dados.php';
+require "dados.php";
 
-$view = 'index';
-require "views/template/app.php";
+view('index', ['media_movies' => $media_movies]);
 
 ?>

@@ -1,5 +1,12 @@
 <?php
 
+function view($view, $data = []) {
+    foreach($data as $key => $value) {
+        $$key = $value;
+    }
+    require "views/template/app.php";
+}
+
 function dd(...$dump) {
     echo "<pre>";
     var_dump($dump);
@@ -9,7 +16,7 @@ function dd(...$dump) {
 
 function abort($code) {
     http_response_code($code);
-    require "views/{$code}.view.php";
+    view($code);
     die();
 }
 
